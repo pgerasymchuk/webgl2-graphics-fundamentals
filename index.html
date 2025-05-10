@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebGL2 Graphics Fundamentals</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: system-ui, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: block;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      border-color: #888;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      background-color: #eee;
+    }
+
+    .card div {
+      padding: 10px 12px;
+    }
+
+    .card h2 {
+      margin: 0 0 4px;
+      font-size: 1.05em;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>WebGL2 Graphics Fundamentals</h1>
+
+  <div class="gallery">
+    <a class="card" href="2d-transformations/index.html">
+      <img src="docs/2d-transformations.png" alt="2D transformations">
+      <div>
+        <h2>2D Transformations</h2>
+        <p>Rotating triangles with a 3x3 matrix, plus a bouncing triangle fan.</p>
+      </div>
+    </a>
+
+    <a class="card" href="2d-shapes/index.html">
+      <img src="docs/2d-shapes.png" alt="2D shapes">
+      <div>
+        <h2>2D Shapes</h2>
+        <p>Draw points, triangles and circles with the mouse in any color.</p>
+      </div>
+    </a>
+
+    <a class="card" href="cube-projection/index.html">
+      <img src="docs/cube-projection.png" alt="Cube projection">
+      <div>
+        <h2>Cube Projection</h2>
+        <p>A spinning cube with switchable orthographic and perspective projection.</p>
+      </div>
+    </a>
+
+    <a class="card" href="3d-letter/index.html">
+      <img src="docs/3d-letter.png" alt="3D letter">
+      <div>
+        <h2>3D Letter</h2>
+        <p>A colored 3D letter Г rotating and moving in depth.</p>
+      </div>
+    </a>
+
+    <a class="card" href="3d-letter-textured/index.html">
+      <img src="docs/3d-letter-textured.png" alt="Textured 3D letter">
+      <div>
+        <h2>Textured 3D Letter</h2>
+        <p>The same letter with textures and Phong lighting.</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
